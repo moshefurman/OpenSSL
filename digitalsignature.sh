@@ -81,7 +81,6 @@ echo "  echo "Valid signature""
 echo "else"
 echo "  echo "Error signatute""
 echo "fi"
-
 if [[ $ash1 == $ash2 ]]; then
   echo "Valid signature"
 else
