@@ -37,8 +37,8 @@ echo ""
 echo "========================================================================================="
 echo ""
 echo "Create ash (sha256sum) File to solomon.png Into ash256.sha"
-echo "Use - cat solomon.png | sha256sum >> ash256.sha"
-cat solomon.png | sha256sum >> ash256.sha
+echo "Use - cat solomon.png | sha256sum > ash256.sha"
+cat solomon.png | sha256sum > ash256.sha
 echo ""
 echo "========================================================================================="
 echo ""
