@@ -1,3 +1,3 @@
 # OpenSSL
 OpenSSL
-Example For Encrypion And Decription Text With OpenSSL Symetric Key
+Example For implementing encryption with ioenssl
