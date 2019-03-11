@@ -45,11 +45,6 @@ echo ""
 echo "Sign ash256.sha (ash file) with the private key to get the signature Into ash256.signed"
 echo "Use - cat ash256.sha | openssl rsautl -inkey private_key.pem -sign > ash256.signed"
 cat ash256.sha | openssl rsautl -inkey private_key.pem -sign > ash256.signed
-
-#echo "encrypt ash256.sha (ash file) with the private key to get the signature Into ash256.enc"
-#echo "Use - openssl rsautl -encrypt -inkey private_key.pem -in ash256.sha -out ash256.enc"
-#openssl rsautl -encrypt -inkey private_key.pem -in ash256.sha -out ash256.enc
-
 echo ""
 echo "========================================================================================="
 echo "========================================================================================="
