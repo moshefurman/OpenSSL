@@ -9,7 +9,7 @@ rm ash256.signed
 wget -O ./solomon.png  https://upload.wikimedia.org/wikipedia/commons/a/a2/Dore_Solomon_Proverbs.png
 openssl genrsa -out private_key.pem 2048
 openssl rsa -pubout -in private_key.pem -out public_key.pem
-cat solomon.png | sha256sum >> ash256.sha
+cat solomon.png | sha256sum > ash256.sha
 cat ash256.sha | openssl rsautl -inkey private_key.pem -sign > ash256.signed
 openssl rsautl -inkey public_key.pem -pubin -in ash256.signed -out ash256.dec
 ash1="$(cat ash256.sha)"
